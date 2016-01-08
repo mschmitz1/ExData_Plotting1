@@ -9,5 +9,4 @@ powerConsum <- sqldf('select * from eingabe where Date = "1/2/2007" or Date = "2
 	file.format = list(sep = ";"))
 # Package lubridate is used for date / time functions
 library(lubridate)
-powerConsum$Datum <- dmy(powerConsum$Date)
-powerConsum$Zeit <- hms(powerConsum$Time)
+powerConsum$datetime <- parse_date_time(paste(powerConsum$Date, powerConsum$Time), "%d/%m/%y %h:%m:%s")
