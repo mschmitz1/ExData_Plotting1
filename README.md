@@ -10,6 +10,7 @@ of nine Files:
 - plot2.png
 - plot3.png
 - plot4.png
+
 The precondition is that the underlying data file household_power_consumption.txt
 lies in the same folder as the above mentioned five R program files. To test my
 implementation you will have to successively start readdata.r and then plot1.r 
