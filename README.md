@@ -1,3 +1,28 @@
+## Personal Addenda
+My work for the Course Project 1 in Exploratory Data Analysis consists
+of nine Files:
+- readdata.r
+- plot1.r
+- plot2.r
+- plot3.r
+- plot4.r
+- plot1.png
+- plot2.png
+- plot3.png
+- plot4.png
+The precondition is that the underlying data file household_power_consumption.txt
+lies in the same folder as the above mentioned five R program files. To test my
+implementation you will have to successively start readdata.r and then plot1.r 
+until plot4r. The graphic output files plot1.png until plot4.png are generated
+with the corresponding script. The x axis in each graphic is marked with the 
+german abbreviations for Thu, Fri, Sat; i. e. Do, Fr, Sa. I've found it very 
+time consuming trying to replace the tick marks against self defined strings.
+In readdata.r, I read only the needed data into the work space. I did this
+with a SQL call. If someone has another solution, it would be nice to 
+communicate this in the review remarks.
+
+Thank you very much
+
 ## Introduction
 
 This assignment uses data from
