@@ -1,5 +1,4 @@
-# xTicks are german locale for "Thu, Fri, Sat", so it would be
-# rather time-consuming trying to change them
+# Generating plot
 with(powerConsum, {
 	plot(datetime, Sub_metering_1, type = "n",
 		xlab = "", ylab = "Energy sub metering")

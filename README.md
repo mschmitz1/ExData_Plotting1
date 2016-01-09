@@ -15,9 +15,16 @@ The precondition is that the underlying data file household_power_consumption.tx
 lies in the same folder as the above mentioned five R program files. To test my
 implementation you will have to successively start readdata.r and then plot1.r 
 until plot4r. The graphic output files plot1.png until plot4.png are generated
-with the corresponding script. The x axis in each graphic is marked with the 
-german abbreviations for Thu, Fri, Sat; i. e. Do, Fr, Sa. I've found it very 
-time consuming trying to replace the tick marks against self defined strings.
+with the corresponding script. 
+To avoid having German abbreviations for the weekdays in the graphics, I 
+changed the local time setting as described in the discussion forum 
+temporarily with
+
+my_lc_time <- Sys.getlocale("LC_TIME")
+Sys.setlocale("LC_TIME", "English")
+# Run now your script (or include here source("your script"))
+Sys.setlocale("LC_TIME", my_lc_time)
+
 In readdata.r, I read only the needed data into the work space. I did this
 with a SQL call. If someone has another solution, it would be nice to 
 communicate this in the review remarks.
